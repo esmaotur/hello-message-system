@@ -5,8 +5,7 @@ Bu proje, Ruby on Rails ile geliştirilmiş 5 modelli bir mesajlaşma API'sidir.
 ## 👨‍🎓 Öğrenci Bilgileri
 
 - **Ad Soyad:** Esma Otur
-- **Öğrenci No:** 23118003
-- **E-posta:** 23118003@samsun.edu.tr
+- **E-posta:** 231118003@samsun.edu.tr
 - **Üniversite:** Samsun Üniversitesi
 
 ## 📋 Proje Açıklaması
