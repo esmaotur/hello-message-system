@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "3f7ab0c9-aad5-4ae1-b917-46e4a698e56c",
+		"name": "Hello Message System",
+		"description": "TDD/BDD Uygulaması - Esma Otur",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49517899",
+		"_collection_link": "https://esma-otur-71151.postman.co/workspace/Esma-Otur's-Workspace~ad19f622-bc2e-486b-8b8c-4960c724ddf4/collection/49517899-3f7ab0c9-aad5-4ae1-b917-46e4a698e56c?action=share&source=collection_link&creator=49517899"
+	},
+	"item": [
+		{
+			"name": "Get All Messages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/v1/messages",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Message (Valid)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"message\": {\r\n    \"content\": \"Merhaba Mimi!\",\r\n    \"user_id\": 1,\r\n    \"category_id\": 1,\r\n    \"conversation_id\": 1\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/v1/messages",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Message (Invalid)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"message\": {\r\n    \"content\": \"\",\r\n    \"user_id\": 1,\r\n    \"category_id\": 1,\r\n    \"conversation_id\": 1\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/v1/messages",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
